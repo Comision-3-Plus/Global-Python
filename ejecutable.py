@@ -1,14 +1,19 @@
 from clases import Detector, Radiacion, Virus, Sanador
 
 def main():
-    matriz = [
-        "AGATCA",
-        "AATTCA",
-        "AAACAT",
-        "AAGCTA",
-        "ATTGCG",
-        "CTGTTC"
-    ]
+    matriz=[]
+    print("Ingrese la matriz de 6x6")
+    for i in range(6):
+        while True:
+            Adn = input().upper()
+        
+            if len(Adn) == 6 and all(letra in {'A', 'G', 'T', 'C'} for letra in Adn):
+                matriz.append(Adn)
+                break
+            else:
+                print("Error: La cadena debe tener exactamente 6 letras y solo letras A, G, T o C.")
+            
+
     detector = Detector()
     sanador = Sanador()
     
