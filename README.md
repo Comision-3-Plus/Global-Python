@@ -31,7 +31,7 @@ Ejemplo:
 ![image](https://github.com/user-attachments/assets/01cddb25-8c44-438f-a39c-780f3b4c681d)
 
 ## Integrantes del Grupo
-`#0969DA`
+`#0969DA hola`
 - Juan Ignacio Sarmiento
 - Lautaro Salinas
 - Lucas Herbst
