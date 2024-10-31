@@ -26,9 +26,9 @@ def main():
         opcion = int(input("¿Qué deseas hacer? (1: Detectar mutantes, 2: Mutar, 3: Sanar 4: Salir): "))
         if opcion == 1:
             if detector.detectar_mutantes(matriz):
-                print("Se detectó un mutante en el ADN.")
+                print(True)
             else:
-                print("No se detectaron mutantes.")
+                print(False)
         elif opcion == 2:
             tipo_mutacion = input("¿Deseas mutar con radiación (H/V) o virus (D)? ").upper()
             
