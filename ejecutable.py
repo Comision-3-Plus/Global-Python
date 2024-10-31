@@ -50,6 +50,7 @@ def main():
             print("ADN mutado:")
             for fila in nueva_matriz:
                 print(fila)
+            matriz=nueva_matriz
         elif opcion == 3:
             nueva_matriz = sanador.sanar_mutantes(matriz, detector)
             print("ADN sanado:")
