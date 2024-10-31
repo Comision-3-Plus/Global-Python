@@ -104,8 +104,15 @@ class Sanador:
         return matriz
 
     def _generar_adn_no_mutante(self, n):
-        # Genera una nueva matriz sin mutaciones, usando bases nitrogenadas aleatorias
         import random
         bases = ['A', 'T', 'C', 'G']
-        nueva_matriz = [''.join(random.choice(bases) for _ in range(n)) for _ in range(n)]
+        def generar_fila_sin_mutacion():
+            while True:
+                fila = ''.join(random.choice(bases) for _ in range(n))
+            # Verificamos si contiene alguna secuencia de 4 bases consecutivas iguales
+                if not any(fila[i] == fila[i+1] == fila[i+2] == fila[i+3] for i in range(n - 3)):
+                    return fila
+    
+        # Generamos la matriz usando filas sin mutación
+        nueva_matriz = [generar_fila_sin_mutacion() for _ in range(n)]
         return nueva_matriz

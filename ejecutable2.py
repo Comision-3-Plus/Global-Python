@@ -1,4 +1,4 @@
-from clases import Detector, Radiacion, Virus, Sanador, Mutador  # Importación de las clases necesarias
+from clases import Detector, Radiacion, Virus, Sanador  # Importación de las clases necesarias
 
 def main():
     matriz = []
