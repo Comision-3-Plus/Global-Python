@@ -1,3 +1,4 @@
+#Definición de la clase Detector
 class Detector:
     def __init__(self):
         self.matriz = []

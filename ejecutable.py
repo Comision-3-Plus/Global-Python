@@ -2,7 +2,7 @@ from clases import Detector, Radiacion, Virus, Sanador
 
 def main():
     matriz=[]
-    print("Ingrese la matriz de 6x6")
+    print("Ingrese la matriz de 6x6:")
     for i in range(6):
         while True:
             Adn = input().upper()
