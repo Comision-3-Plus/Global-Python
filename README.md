@@ -32,7 +32,7 @@ Ejemplo:
 
 ## Integrantes del Grupo
 
-Juan Ignacio Sarmiento
+Juan Ignacio Sarmiento \n
 Lautaro Salinas
 Lucas Herbst
 Franco Mellimaci
