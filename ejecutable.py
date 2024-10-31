@@ -30,7 +30,7 @@ def main():
             else:
                 print("No se detectaron mutantes.")
         elif opcion == 2:
-            tipo_mutacion = input("¿Deseas mutar con radiación (H/V) o virus (D)? ")
+            tipo_mutacion = input("¿Deseas mutar con radiación (H/V) o virus (D)? ").upper()
             
             adn = ""
             while adn not in ["A", "G", "T", "C"]:
