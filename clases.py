@@ -1,4 +1,3 @@
-# Clase Detector: detecta mutantes en una matriz de ADN
 class Detector:
     def __init__(self):
         self.matriz = []
