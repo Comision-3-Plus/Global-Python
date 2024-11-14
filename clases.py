@@ -2,7 +2,7 @@ class Detector:
     def __init__(self):
         self.matriz = []
 
-    def detectar_mutantes(self, matriz):
+    def detectar_mutantes(self, matriz: list):
         # Guarda la matriz y verifica si hay mutantes en cualquier dirección
         self.matriz = matriz
         if self._detectar_horizontal() or self._detectar_vertical() or self._detectar_diagonal():
@@ -57,7 +57,7 @@ class Radiacion(Mutador):
     def __init__(self, base_nitrogenada):
         super().__init__(base_nitrogenada)
 
-    def crear_mutante(self, matriz, posicion_inicial, orientacion_de_la_mutacion):
+    def crear_mutante(self, matriz:list, posicion_inicial, orientacion_de_la_mutacion):
         # Intenta crear una mutación en la matriz según la orientación
         try:
             fila, columna = posicion_inicial
@@ -79,7 +79,7 @@ class Virus(Mutador):
     def __init__(self, base_nitrogenada):
         super().__init__(base_nitrogenada)
 
-    def crear_mutante(self, matriz, posicion_inicial):
+    def crear_mutante(self, matriz:list, posicion_inicial):
         # Intenta crear una mutación en diagonal
         try: 
             fila, columna = posicion_inicial
@@ -96,7 +96,7 @@ class Sanador:
     def __init__(self):
         pass
 
-    def sanar_mutantes(self, matriz, detector):
+    def sanar_mutantes(self, matriz:list, detector):
         # Si se detecta un mutante, genera un ADN sin mutaciones
         if detector.detectar_mutantes(matriz):
             return self._generar_adn_no_mutante(len(matriz))
