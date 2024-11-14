@@ -98,6 +98,7 @@ class Sanador:
 
     def sanar_mutantes(self, matriz:list, detector):
         # Si se detecta un mutante, genera un ADN sin mutaciones
+
         if detector.detectar_mutantes(matriz):
             return self._generar_adn_no_mutante(len(matriz))
         return matriz
@@ -120,7 +121,7 @@ class Sanador:
             # Verificamos si contiene alguna secuencia de 4 bases consecutivas iguales
                 if not any(fila[i] == fila[i+1] == fila[i+2] == fila[i+3] for i in range(n - 3)):
                     return fila
-    
+        
         # Generamos la matriz usando filas sin mutación
         nueva_matriz = [generar_fila_sin_mutacion() for _ in range(n)]
         return nueva_matriz
