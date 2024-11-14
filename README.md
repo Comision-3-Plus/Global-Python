@@ -16,7 +16,7 @@ Ejemplo:
 4. Si presionó 1 el programa le arrojará si el ADN tiene un gen mutante o no.
 5. En caso de que se haya detectado un mutante en el ADN, presione 3 para sanar el ADN.
 6. Si presionó 1 y el programa **NO** detecta un gen mutante puede presionar 2 para mutar el ADN.
-7. En caso de que haya presionado 2 puede mutar el ADN de manera horizontal, vertical o diagonal precionando la tecla **H** (Horizontal, **V** (Vertical) ó **D** (Diagonal).
+7. En caso de que haya presionado 2 puede mutar el ADN de manera horizontal, vertical o diagonal presionando la tecla **H** (Horizontal, **V** (Vertical) ó **D** (Diagonal).
 
 ![image](https://github.com/user-attachments/assets/a17378fb-fda3-4303-9e57-bd1879d34f8b)
 
